@@ -1,12 +1,11 @@
-<div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-    <div class="flex-shrink-0">
-      <img class="h-12 w-12" src="{{hobby.hobbyImage}}" alt="{{hobby.name}}">
-    </div>
-    <div>
-      <div class="text-xl font-medium text-black">{{hobby.name}}</div>
-      <p class="text-gray-500">{{hobby.description}}</p>
-    </div>
-    <div class="flex-shrink-0">
-      <img class="h-12 w-12" src="{{hobby.personImage}}" alt="Famous person">
-    </div>
+<article class="p-6 mx-auto bg-white rounded-xl shadow-md space-y-4">
+  <div class="flex items-center space-x-4">
+    <img class="h-12 w-12" src="{{hobby.hobbyImage}}" alt="{{hobby.name}}">
+    <h1 class="text-xl font-medium text-black">{{hobby.name}}</h1>
   </div>
+  <p class="text-gray-500">{{hobby.description}}</p>
+  <div class="flex items-center space-x-4">
+    <img class="h-12 w-12" src="{{hobby.personImage}}" alt="Famous person">
+    <p>{{hobby.personName}} enjoys this hobby!</p>
+  </div>
+</article>
